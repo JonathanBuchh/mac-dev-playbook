@@ -1,0 +1,70 @@
+---
+configure_dotfiles: true
+configure_terminal: false
+configure_osx: true
+
+dotfiles_repo: https://github.com/JonathanBuchh/dotfiles.git
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/Code/JonathanBuchh/dotfiles
+dotfiles_files:
+  - .config/alacritty/alacritty.yml
+  - .config/fish/config.fish
+  - .config/fish/functions/fish_prompt.fish
+  - .config/git/config
+  - .config/git/gitignore
+  - .config/nvim/init.vim
+  - .osx
+  - .tmux.conf
+  - .vimrc
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+  - homebrew/cask-fonts
+
+homebrew_installed_packages:
+  - 1password
+  - alacritty
+  - ffmpeg
+  - fish
+  - git
+  - github/gh/gh
+  - imagemagick
+  - mactex
+  - monodraw
+  - neovim
+  - pandoc
+  - ssh-copy-id
+  - tmux
+
+homebrew_cask_apps:
+  - alfred
+  - amethyst
+  - bartender
+  - discord
+  - exifcleaner
+  - firefox
+  - font-fira-code
+  - google-chrome
+  - little-snitch
+  - messenger
+  - micro-snitch
+  - obs
+  - prusaslicer
+  - slack
+  - vagrant
+  - whatsapp
+
+mas_installed_apps:
+  - {id: 1289583905, name: "Pixelmator Pro"}
+  - {id: 1435957248, name: "Drafts"}
+  - {id: 1475387142 , name: "Tailscale"}
+  - {id: 1480933944, name: "Vimari"}
+  - {id: 1497506650, name: "Yubico Authenticator"}
+  - {id: 1529448980, name: "Reeder"}
+
+gem_packages:
+  - name:
+      - bundler
+      - jekyll
+    state: latest
